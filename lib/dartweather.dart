@@ -11,6 +11,7 @@ class DartWeather {
     } else {
       try {
         final apiResult = await _service.getWeather(state: state);
+        
         stdout.writeln('');
         stdout.writeln(
             'Weather in ${apiResult.name} ${String.fromCharCodes(UtilRunes.rainbow)}');
